@@ -1,4 +1,4 @@
-RISC-V SoC + DSP/Vector Accelerator (LiteX)
+## RISC-V SoC + DSP/Vector Accelerator (LiteX)
 
 [![Build](https://img.shields.io/badge/build-local-blue)](https://github.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
