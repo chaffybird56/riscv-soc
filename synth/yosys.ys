@@ -1,0 +1,15 @@
+# Yosys synthesis for vector_mac_accel
+
+read_verilog -sv ../hw/rtl/vector_mac_accel.v
+hierarchy -top vector_mac_accel
+
+proc; opt; fsm; opt; memory; opt
+synth -top vector_mac_accel
+
+write_json results/netlist.json
+write_verilog -noexpr -noattr -norename results/netlist.v
+
+stat -json > reports/yosys_stat.json
+stat > reports/yosys_stat.txt
+
+

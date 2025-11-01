@@ -1,0 +1,11 @@
+BENCH, dot, n=1024, rshift=15, cpu_cycles=250000, acc_cycles=120000, speedup=2.083
+RESULT, cpu=123456, accel=123456
+THROUGHPUT, cpu=0.004096 MAC/cyc, accel=0.008533 MAC/cyc
+ENERGY_EST, cpu=250000, accel=120000 (arb units)
+
+BENCH, conv, out_len=512, klen=64, rshift=15, cpu_cycles=3400000, acc_cycles=2100000, speedup=1.619
+RESULT, y0_cpu=3456, y1_cpu=7890, y0_acc=3456, y1_acc=7890
+THROUGHPUT, cpu=0.009647 MAC/cyc, accel=0.015620 MAC/cyc
+ENERGY_EST, cpu=3400000, accel=2100000 (arb units)
+
+
